@@ -20,17 +20,17 @@ const Banner = () => {
         {
             image:banner1,
             text:"Your Portal to India's  Exquisite Real Estate",
-            discription:"Seamlessly connecting you to the heartbeat of India's prime properties."
+            body:"Seamlessly connecting you to the heartbeat of India's prime properties."
         },
         {
             image:banner2,
-            text:"Your Portal to India's Exquisite Real Estate",
-            discription:"Seamlessly connecting you to the heartbeat of India's prime properties."
+            text:"Explore India's Finest Real Estate Gems",
+            body:"Unlock access to India’s most prestigious homes and commercial spaces, ."
         },
         {
             image:banner3,
-            text:"Your Portal to India's Exquisite Real Estate",
-            discription:"Seamlessly connecting you to the heartbeat of India's prime properties."
+            text:"Unlock India's Luxury Real Estate Market",
+            body:"Delve into the world of high-end real estate in India, where exceptional properties and prime "
         }
     ]
 
@@ -52,17 +52,9 @@ const Banner = () => {
                 className="mySwiper"
             >
                 {
-                    banner.map((slider,index)=> <SwiperSlide key={index} ><Slider img = {slider?.image} text={slider?.text} /> </SwiperSlide>)
+                    banner.map((slider,index)=> <SwiperSlide key={index} ><Slider slider={slider} /> </SwiperSlide>)
                 }
-                <SwiperSlide>
-                    <Slider img = {banner1} text = 'DISCOVER CULINARY DELIGHTS'/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Slider img = {banner2} text = 'WE GET WHAT YOU LOVE'/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Slider img = {banner3} text = 'ORDER FOOD DELIVERY'  />
-                </SwiperSlide>
+                
                 
                
                 

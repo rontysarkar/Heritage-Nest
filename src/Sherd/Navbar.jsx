@@ -15,6 +15,20 @@ const Navbar = () => {
             to={"/"}
         >
             <li>
+                <span>Home</span>
+            </li>
+        </NavLink>
+        <NavLink
+            className={({ isActive, isPending }) =>
+                isPending
+                    ? "pending"
+                    : isActive
+                        ? " font-bold  text-primary"
+                        : "hover:text-orange font-bold"
+            }
+            to={"/buy"}
+        >
+            <li>
                 <span>Buy</span>
             </li>
         </NavLink>
@@ -49,7 +63,7 @@ const Navbar = () => {
         </NavLink>
     </>
     return (
-        <div className="navbar bg-transparent 2xl:px-32 lg:h-[64px] shadow-xl">
+        <div className="navbar bg-[#ecf5ff] 2xl:px-72 lg:h-[64px] shadow-xl ">
             <div className="navbar-start hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {pageLink}
