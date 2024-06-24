@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination, Autoplay } from 'swiper/modules';
+import { Link } from "react-router-dom";
 
 
 const NewProperties = () => {
@@ -89,7 +90,7 @@ const NewProperties = () => {
                 >
                     {
                         properties.map((property, index) => <SwiperSlide key={index}>
-                            <div className="w-full max-w-sm overflow-hidden  rounded-lg shadow-lg mx-auto ">
+                            <Link to={'/propertyDetails'}><div className="w-full max-w-sm overflow-hidden  rounded-lg shadow-lg mx-auto ">
                                 <div className="relative">
                                     <img className="object-cover object-center w-full h-56" src={property.img} alt="" />
                                     <div className="flex items-center gap-2  bg-[#fdf0e7] w-12 rounded-sm absolute bottom-2 left-2">
@@ -110,7 +111,7 @@ const NewProperties = () => {
                                     <h1 className="text-2xl font-bold">$ {property.price}</h1>
                                     {/* <button>View Property</button> */}
                                 </div>
-                            </div>
+                            </div></Link>
                         </SwiperSlide>)
                     }
 

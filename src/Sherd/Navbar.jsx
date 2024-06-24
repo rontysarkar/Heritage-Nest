@@ -102,7 +102,7 @@ const Navbar = () => {
                         <span>Manage Rentals</span>
                     
                 </NavLink>
-                <Link to={'/login'}><button className="w-20 px-4 bg-primary text-white py-1 rounded-sm">sign in</button></Link>
+                <Link to={'/login'}><button className="   pl-4 font-bold">sign in</button></Link>
 
             </div>
         </div>
