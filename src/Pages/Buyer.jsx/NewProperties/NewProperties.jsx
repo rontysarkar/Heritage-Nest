@@ -83,7 +83,7 @@ const NewProperties = () => {
                     modules={[Pagination, Autoplay]}
                     className="mySwiper my-16"
                     autoplay={{
-                        delay: 1000,
+                        delay: 2000,
 
                     }}
                 >
