@@ -71,7 +71,7 @@ const Details = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-36">
+            <div className="lg:mt-36">
                 <div className="bg-[#ecf5ff] p-6 space-y-5">
                     <h1>Property value</h1>
                     <h1 className="text-xl font-bold">$ 300k - $ 310k</h1>
@@ -95,8 +95,11 @@ const Details = () => {
                         </div>
                     </div>
                     <div className="flex justify-center">
-                    <button className="btn bg-blue-700 text-white ">Bid Property</button>
+                        <button className="btn bg-blue-700 text-white ">Bid Property</button>
                     </div>
+                </div>
+                <div className="my-12 ">
+                    <iframe className="w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162694.61464969025!2d-88.1295549237184!3d42.95488804851289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880511ed5bf84fed%3A0xe95ceb0a124d8533!2sPondview%20Park!5e0!3m2!1sen!2sbd!4v1719258308096!5m2!1sen!2sbd"  allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

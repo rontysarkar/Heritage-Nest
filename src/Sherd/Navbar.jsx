@@ -41,7 +41,7 @@ const Navbar = () => {
                         ? " font-bold  text-primary"
                         : "hover:text-orange font-bold"
             }
-            to={"gallery"}
+            to={"/propertyDetails"}
         >
             <li>
                 <span>Sell</span>
