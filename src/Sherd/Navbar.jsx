@@ -61,6 +61,20 @@ const Navbar = () => {
                 <span>Service</span>
             </li>
         </NavLink>
+        <NavLink
+            className={({ isActive, isPending }) =>
+                isPending
+                    ? "pending"
+                    : isActive
+                        ? " font-bold  text-primary"
+                        : "hover:text-orange font-bold"
+            }
+            to={"/about"}
+        >
+            <li>
+                <span>About</span>
+            </li>
+        </NavLink>
     </>
     return (
         <div className="navbar bg-[#ecf5ff] 2xl:px-72 lg:h-[64px] shadow-xl ">
