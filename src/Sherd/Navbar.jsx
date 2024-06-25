@@ -102,8 +102,8 @@ const Navbar = () => {
 
             <div className="navbar-end space-x-4">
 
-                <NavLink className="hover:text-orange font-bold"><span>Manage Rentals</span></NavLink>
-                <Link ><button className="ml-4 py-1 px-4  rounded-lg text-blue-700  bg-[#c5e2ff]">sign in</button></Link>
+                <NavLink className="hover:text-orange font-bold hidden lg:flex "><span>Manage Rentals</span></NavLink>
+                <Link ><button className="hidden lg:flex lg:ml-4 py-1 px-4  rounded-lg text-blue-700  bg-[#c5e2ff] ">sign in</button></Link>
 
             </div>
         </div>

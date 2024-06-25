@@ -39,10 +39,10 @@ const HeroSection = () => {
                         <div className='relative'>
                             <IoIosArrowDown className='absolute right-4 bottom-6 text-sm text-orange-500' />
                             <select name="#" className='input input-bordered w-full input-lg  rounded-none bg-[#ecf5ff] '>
-                            <option value="">Greenfield, USA</option>
-                            <option value=""> New York City, USA</option>
-                            <option value="">Greenfield, USA</option>
-                            <option value=""> New York City, USA</option>
+                            <option value=""> USA</option>
+                            <option value=""> New York </option>
+                            <option value="">Greenfield</option>
+                            <option value=""> City</option>
                             </select>
                         </div>
                     </div>
