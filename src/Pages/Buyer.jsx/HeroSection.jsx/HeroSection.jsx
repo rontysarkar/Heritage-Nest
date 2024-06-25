@@ -3,6 +3,7 @@ import hero from '../../../assets/images/hero.jpg'
 import { BiSolidDollarCircle } from 'react-icons/bi';
 import { IoIosArrowDown } from 'react-icons/io';
 import { CiSearch } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
 const HeroSection = () => {
     return (
         <div>
@@ -38,8 +39,10 @@ const HeroSection = () => {
                         <div className='relative'>
                             <IoIosArrowDown className='absolute right-4 bottom-6 text-sm text-orange-500' />
                             <select name="#" className='input input-bordered w-full input-lg  rounded-none bg-[#ecf5ff] '>
-                                <option value="">Bangladesh</option>
-                                <option value="">India</option>
+                            <option value="">Greenfield, USA</option>
+                            <option value=""> New York City, USA</option>
+                            <option value="">Greenfield, USA</option>
+                            <option value=""> New York City, USA</option>
                             </select>
                         </div>
                     </div>
@@ -48,6 +51,8 @@ const HeroSection = () => {
                         <div className='relative'>
                             <IoIosArrowDown className='absolute right-4 bottom-6 text-sm text-orange-500' />
                             <select name="#" className='input input-bordered w-full input-lg  rounded-none bg-[#ecf5ff]'>
+                                <option value="">Real State</option>
+                                <option value="">Apartment</option>
                                 <option value="">Real State</option>
                                 <option value="">Apartment</option>
                             </select>
@@ -59,13 +64,15 @@ const HeroSection = () => {
                         <div className='relative'>
                             <IoIosArrowDown className='absolute right-4 bottom-6 text-sm text-orange-500' />
                             <select name="#" className='input input-bordered w-full input-lg  rounded-none bg-[#ecf5ff]'>
-                                <option value="">1200</option>
-                                <option value="">1300</option>
+                                <option value="">250k</option>
+                                <option value="">130k</option>
+                                <option value="">550k</option>
+                                <option value="">190k</option>
                             </select>
                         </div>
                     </div>
                 </div>
-                <button className='btn w-full bg-blue-700 text-white hover:text-black my-6'> <CiSearch className="text-xl" /> Find Property</button>
+                <Link to={"/propertyDetails/1"}><button className='btn w-full bg-blue-700 text-white hover:text-black my-6'> <CiSearch className="text-xl" /> Find Property</button></Link>
             </div>
         </div>
     );

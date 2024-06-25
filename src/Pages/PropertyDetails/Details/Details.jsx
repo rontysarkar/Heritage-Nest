@@ -2,20 +2,31 @@ import { GoDotFill } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
 import { LiaBedSolid } from "react-icons/lia";
 import { MdBalcony, MdOutlineBathtub } from "react-icons/md";
+import useAllProperty from "../../../Hooks/useAllProperty";
+import { useParams } from "react-router-dom";
 
 const Details = () => {
+    const { id } = useParams()
+    const [allProperty] = useAllProperty()
+    // console.log(allProperty,id)
+    const property = allProperty.find(p => p.id === parseInt(id))
+    console.log(property.body)
+
+
     return (
         <div className="max-w-7xl mx-auto my-10 flex flex-col lg:flex-row  gap-10">
             <div className="lg:w-2/3">
                 <div className="flex justify-between items-center border-b-2  p-4">
                     <div className="py-2 w-2/3">
-                        <h1 className="lg:text-xl font-bold pb-2">3 BHK Builder Floor for Sale in Site Ram Bazar Hyderabad</h1>
-                        <h2 className="flex items-center gap-2 "><IoLocationOutline className="text-xl text-orange-600" /> Meadowshire Park, Greenfield, USA</h2>
+                        <h1 className="lg:text-xl font-bold pb-2">{property?.body}</h1>
+                        <h2 className="flex items-center gap-2 "><IoLocationOutline className="text-xl text-orange-600" />{property?.location}</h2>
                     </div>
-                    <h1 className="lg:text-2xl font-bold ">$300K</h1>
+                    <h1 className="lg:text-2xl font-bold ">${property?.price}</h1>
                 </div>
                 <div className="py-4">
-                    <img className="w-full" src="https://i.ibb.co/Z8SzHZY/Rectangle-20.jpg" alt="" />
+                    <div className="h-[430px] overflow-hidden">
+                        <img className="w-full  " src={property?.img} alt="" />
+                    </div>
                     <div className="grid grid-cols-3 gap-3 pt-4 ">
                         <div><img src="https://i.ibb.co/Z8SzHZY/Rectangle-20.jpg" alt="" /></div>
                         <div><img src="https://i.ibb.co/Y3xNqVL/img-3.jpg" alt="" /></div>
@@ -99,7 +110,7 @@ const Details = () => {
                     </div>
                 </div>
                 <div className="my-12 ">
-                    <iframe className="w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162694.61464969025!2d-88.1295549237184!3d42.95488804851289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880511ed5bf84fed%3A0xe95ceb0a124d8533!2sPondview%20Park!5e0!3m2!1sen!2sbd!4v1719258308096!5m2!1sen!2sbd"  allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe className="w-full h-96" src={property?.locationLink} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

@@ -22,7 +22,7 @@ const ServiceSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {
                 otherServices.map((service,index)=><div key={index} className="w-96 h-44 bg-[rgb(236,245,255)] flex mx-auto">
-                <div className="p-4 " ><IoHomeOutline className="text-7xl p-4 bg-orange-500 rounded-sm"/></div>
+                <div className="p-4 " ><IoHomeOutline className="text-6xl text-slate-200 p-4 bg-orange-500 rounded-sm"/></div>
                 <div className="px-2 py-2">
                     <h1 className="text-2xl font-bold  py-2">{service?.title}</h1>
                     <p>{service?.body}</p>

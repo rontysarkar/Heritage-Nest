@@ -41,7 +41,7 @@ const Navbar = () => {
                         ? " font-bold  text-primary"
                         : "hover:text-orange font-bold"
             }
-            to={"/propertyDetails"}
+            to={"/propertyDetails/1"}
         >
             <li>
                 <span>Sell</span>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         ? " font-bold  text-primary"
                         : "hover:text-orange font-bold"
             }
-            to={"gallery"}
+            to={"/about"}
         >
             <li>
                 <span>Service</span>
@@ -102,21 +102,8 @@ const Navbar = () => {
 
             <div className="navbar-end space-x-4">
 
-                <NavLink
-                    className={({ isActive, isPending }) =>
-                        isPending
-                            ? "pending"
-                            : isActive
-                                ? " font-bold  text-primary"
-                                : "hover:text-orange font-bold"
-                    }
-                    to={"gallery"}
-                >
-                    
-                        <span>Manage Rentals</span>
-                    
-                </NavLink>
-                <Link to={'/login'}><button className="   pl-4 font-bold">sign in</button></Link>
+                <NavLink className="hover:text-orange font-bold"><span>Manage Rentals</span></NavLink>
+                <Link ><button className="ml-4 py-1 px-4  rounded-lg text-blue-700  bg-[#c5e2ff]">sign in</button></Link>
 
             </div>
         </div>

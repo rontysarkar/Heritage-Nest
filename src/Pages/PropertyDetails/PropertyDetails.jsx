@@ -4,6 +4,7 @@ import Details from "./Details/Details";
 import NearbyProperties from "./NearbyProperties/NearbyProperties";
 
 const PropertyDetails = () => {
+    
     return (
         <div>
             <Details/>
