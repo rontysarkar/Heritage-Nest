@@ -24,7 +24,7 @@ const Details = () => {
                     <h1 className="lg:text-2xl font-bold ">${property?.price}</h1>
                 </div>
                 <div className="py-4">
-                    <div className="h-[430px] overflow-hidden">
+                    <div className="lg:h-[430px] overflow-hidden">
                         <img className="w-full  " src={property?.img} alt="" />
                     </div>
                     <div className="grid grid-cols-3 gap-3 pt-4 ">

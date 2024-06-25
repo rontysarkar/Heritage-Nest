@@ -130,7 +130,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                     </div>
-                </section>).slice(0, 3)
+                </section>).slice(0, 2)
 
                 }
             </div>
